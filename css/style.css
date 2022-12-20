@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 300vh;
+
+    display: grid;
+    grid-template-rows: 25% 7% 30% auto 30% 5%;
+    grid-template-areas: 
+        "header"
+        "menu"
+        "section1"
+        "section2"
+        "section3"
+        "footer"
+}
+
+.header h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+
+  
+}
+
+.header{
+    
+    
+    text-align: center;
+    background-image: url("../img/animals/arra.jpg");
+    background-size: cover;
+    font: caption;
+    color: rgb(255, 131, 23);
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    grid-area: header;
+    background-color: rgb(139, 175, 139);
+    
+    padding: 1.25%;
+}
+
+.menu h3 a {
+    color: rgb(255, 255, 255);
+}
+
+.menu h3 {
+    color: rgb(255, 255, 255);
+    background-color: #ffffff72;
+    width: 100%;
+    background-size: 100px;
+    font-size: 50px;
+
+    text-shadow:  1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(118, 118, 118);
+    text-align: center;
+}
+.menu h2{
+    font-size: 30px;
+   text-align: center;
+   color: white;
+  
+}
+
+.menu{
+    font: caption;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-area: menu;
+    background: #c05050 ;
+    padding: 1.25%;
+}
+
+#section_1{
+
+    text-align: center;
+    font: caption;
+    color: rgb(0, 0, 0);
+    grid-area: section1;
+    background: #ffffff;
+    padding: 22%;
+}
+
+#section_2{
+
+    text-align: center;
+    font: caption;
+    color: rgb(0, 0, 0);
+    grid-area: section2;
+    background: #ffffff;
+    padding: 22%;
+}
+ 
+#section_2{
+
+    text-align: center;
+    font: caption;
+    color: rgb(0, 0, 0);
+    grid-area: section2;
+    background: #ffffff ;
+    padding: 22%;
+}
+
+#section_3{
+
+    text-align: center;
+    font: caption;
+    color: white;
+    grid-area: section3;
+    background: #ffffff;
+    padding: 22%;
+}
+
+.footer{
+    text-align: center;
+    font: caption;
+font-size: 10px;
+    color: white;
+    grid-area: footer;
+    background: rgb(108, 133, 100);
+    padding: 3%;
+}
