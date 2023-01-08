@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    width: 100vw;
+    height: 300vh;
+
+    display: grid;
+    grid-template-rows: 25% 7% 30% auto 30% 5%;
+    grid-template-areas: 
+        "nav"
+    "header"
+   "menu "
+        "footer"
+}
+.cards {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    color: rgb(65, 60, 55);
+    padding: 2.5%;
+    padding-left: 120px;
+    grid-template-rows: auto;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-areas: 
+        "c1 c2 c3 c4" 
+        "c5 c6 c7 c8"}
+        .card {
+            background-color:rgb(108, 133, 100);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            text-align: center;
+            margin: 9%;
+            border-radius: 10%;
+            border: 4px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+        }
+        
+        .card:hover {
+            box-shadow: 0 9px 18px 0 rgba(38, 49, 39, 0.2);
+        }
+        
+        #card1 {
+            grid-area: c1;
+        }
+        
+        #card2 {
+            grid-area: c2;
+        }
+        
+        #card3 {
+            grid-area: c3;
+        }
+        
+        #card4 {
+            grid-area: c4;
+        }
+        
+        #card5 {
+            grid-area: c5;
+        }
+        
+        #card6 {
+            grid-area: c6;
+        }
+        
+        #card7 {
+            grid-area: c7;
+        }
+        
+        #card8 {
+            grid-area: c8;
+        }
+.header h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+
+  
+}
+
+.header{
+    
+    
+    text-align: center;
+    
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(57, 48, 48);
+    text-shadow: rgb(50, 59, 52) 1px 0 10px;
+    grid-area: header;
+    background-color: rgb(101, 197, 244);
+    
+    padding: 1.25%;
+}
+
+.menu a{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   color:  #53504b;
+   
+}
+.footer{
+    text-align: center;
+    font: caption;
+font-size: 10px;
+    color: white;
+    grid-area: footer;
+    background: rgb(108, 133, 100);
+    padding: 3%;
+}
